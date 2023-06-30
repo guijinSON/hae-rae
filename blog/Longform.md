@@ -48,6 +48,13 @@ output
 ```
 
 ### Results
+**| Model | Bleu | Rouge_L | Rule-based(length) | Rule-based(style) | Rule-based(keyword) | Rule-based(topic) | Rule-based(topic) | Rule-based(toc) | Rule-based(other)**
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| polyglot-ko-5.8b(not_tuning) | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| polyglot-ko-1.3b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| polyglot-ko-3.8b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| polyglot-ko-5.8b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
 The problem is that the model repeats the instruction, causing hallucinations. This suggests that the model is not tuned properly.
 
 We also used bleu and rouge_L, the evaluation metrics of the default generated model, as metrics. As a result, the model performance converged to 0, which supports the previous finding that the tuning was not correct.
