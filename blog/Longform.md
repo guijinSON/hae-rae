@@ -26,11 +26,11 @@ Instruction
 주요 키워드로는 '외국투자자금 조달', '법령상의 허용한도', '국가개발목표', '경제적 수요심사', '선의의 투자'를 포함해야 합니다.
 이 글은 외국투자자금 조달의 제도적 한계와 선의의 투자 촉진을 위한 목적을 다루어야 합니다.'
 
-context <br>
+context
 '외국투자자금 조달에 의한 사업추진이 국가개발목표와 경제적 수요심사를 충족시키도록 하고
 특정부문 또는 기업의 외국지분이 법령상의 허용한도를 초과하지 않도록 하기 위한 제도이며, 선의의 투자를 촉진하기 위한 목적도 갖고 있다.'
 
-output <br>
+output
 '["외국투자자금 조달의 한계와 선의의 투자를 위한 제도에 대해 작성하십시오.
 이 글은 약 20~30 단어로 작성되어야 하며, 객관적이고 전문적인 스타일로 작성되어야 합니다.
 주요 키워드로는 \'외국투자자금 조달\', \'법령상의 허용한도\', \'국가개발목표\', \'경제적 수요심사\', \'선의의 투자\'를 포함해야 합니다.
@@ -48,6 +48,11 @@ output <br>
 ```
 
 ### Results
+The problem is that the model repeats the instruction, causing hallucinations. This suggests that the model is not tuned properly.
+
+We also used bleu and rouge_L, the evaluation metrics of the default generated model, as metrics. As a result, the model performance converged to 0, which supports the previous finding that the tuning was not correct.
+
+Additionally, we wanted to measure whether the model was generating correctly based on the constraint language given in the instruction. In a basic way, we measured this by giving +1 for each occurrence of a keyword, and split it into a 5-point scale for each constraint.
 
 
 ### Contributors
