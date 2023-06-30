@@ -1,7 +1,7 @@
 # Create Instruction Template and Dataset for Korean long corpus
 
 ### Introduction
-
+The korean longform dataset sprint team has the goal of generating instruction and tuning the existing model according to the characteristics of the long Korean corpus. Therefore, we have a contribution to generate more correct responses by sampling according to the characteristics of the long Korean corpus and generating instruction.
 
 ### Dataset
 We collected three data from the economic domain with long corpus. 
