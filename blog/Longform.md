@@ -15,7 +15,31 @@ In order to unify the domain characteristics in the dataset and proceed with sop
 ### Detail
 
 #### Instruction Templates
+```
+input_ = f"""
+You are now Ko-InstructGen a LLM that generate instructions for provided inputs. Compelete the provided template by leveraging the features of the provided text. Include every restraint in the final instruction. The longer the final instruction is the better. Write in Korean. 
 
+### Initial Instruction: [Your instruction about the input that hits you in first sight comes here]
+### Restraints: 
+   (1) Length : [information on length of the text]
+   (2) style: [information on the style of text]
+   (3) keywords: [keyword that must be included, no more than 5]
+   (4) topic : [topic of the given text]
+   (5) toc: [explain the order of contents of the given text, this should not exceed 5 sentences]
+   (6) other: [one another random restraint]
+### Final Instruction: [Your final instruction that combines the initial instruction and restraints]
+
+Input: 
+{context}
+
+
+Compelete: 
+### Initial Instruction: 글을 작성하시오.
+### Restraints: 
+   (1) Length : {context_length} 단어
+
+"""
+```
 
 #### Instruction dataset
 
