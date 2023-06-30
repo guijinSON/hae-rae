@@ -49,6 +49,7 @@ output
 
 ### Results
 | Model | Bleu | Rouge_L | Rule-based(length) | Rule-based(style) | Rule-based(keyword) | Rule-based(topic) | Rule-based(topic) | Rule-based(toc) | Rule-based(other)
+|------|---|---|---|---|---|---|---|---|---|
 | polyglot-ko-5.8b(not_tuning) | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | polyglot-ko-1.3b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | polyglot-ko-3.8b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
