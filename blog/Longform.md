@@ -87,11 +87,11 @@ Additionally, we wanted to measure whether the model was generating correctly ba
 
 
 ### Contributors
-Sungkyung Kim
-Sangdae Nam
-Gyujin Son
-SangMin Lee
-Jaecheol Lee
+Sungkyung Kim <br>
+Sangdae Nam <br>
+Gyujin Son <br>
+SangMin Lee <br>
+Jaecheol Lee <br>
 
 
 ### Copyright
