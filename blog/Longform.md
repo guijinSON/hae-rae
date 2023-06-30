@@ -56,6 +56,12 @@ Additionally, we wanted to measure whether the model was generating correctly ba
 
 
 ### Contributors
+Sungkyung Kim
+Sangdae Nam
+Gyujin Son
+SangMin Lee
+Jaecheol Lee
 
 
 ### Copyright
+This material is copyrighted by AI hub and the corpus of all, and use for non-research purposes is prohibited.
