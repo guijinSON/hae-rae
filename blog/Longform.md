@@ -15,6 +15,21 @@ In order to unify the domain characteristics in the dataset and proceed with sop
 ### Detail
 
 #### Instruction Templates
+For instruction tuning, we need sophisticated instructions to produce output that is close to the correct answer.
+
+1) Restraints extraction
+Therefore, as a first step, we set the generalized features that can be extracted from the text as restraints, and extract the information corresponding to each restraint with the gpt-3.5-turbo-api. 
+
+2) Generated Final instruction
+Generate a final instruction in the form of a sentence based on the extracted restraints.
+
+3) Model tuning
+Configure the final instruction as the input of the model and the corpus as the output of the model for tuning. At this time, the model is trained with lora during PEFT based on korea language models.
+
+4) Evaluation
+The evaluation is conducted by quantitative and qualitative evaluation. Quantitative evaluation mainly uses the metrics used in the basic generation task. Qualitative evaluation is performed by judging whether the information extracted from each retraining is similar to the output.
+
+
 ```
 input_ = f"""
 You are now Ko-InstructGen a LLM that generate instructions for provided inputs. Compelete the provided template by leveraging the features of the provided text. Include every restraint in the final instruction. The longer the final instruction is the better. Write in Korean. 
