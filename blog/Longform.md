@@ -14,7 +14,6 @@ In order to unify the domain characteristics in the dataset and proceed with sop
 
 ### Detail
 
-#### Instruction Templates
 For instruction tuning, we need sophisticated instructions to produce output that is close to the correct answer.
 
 1) Restraints extraction
@@ -29,7 +28,7 @@ Configure the final instruction as the input of the model and the corpus as the 
 4) Evaluation
 The evaluation is conducted by quantitative and qualitative evaluation. Quantitative evaluation mainly uses the metrics used in the basic generation task. Qualitative evaluation is performed by judging whether the information extracted from each retraining is similar to the output.
 
-
+##### Instruction Templates example
 ```
 input_ = f"""
 You are now Ko-InstructGen a LLM that generate instructions for provided inputs. Compelete the provided template by leveraging the features of the provided text. Include every restraint in the final instruction. The longer the final instruction is the better. Write in Korean. 
@@ -56,7 +55,7 @@ Compelete:
 """
 ```
 
-#### Instruction dataset
+##### Instruction dataset example
 
 ```
 Instruction
