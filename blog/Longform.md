@@ -7,7 +7,7 @@ The korean longform dataset sprint team has the goal of generating instruction a
 We collected three data from the economic domain with long corpus. 
 1) Economic and industrial categories in large-scale web data-based Korean corpus data (AI Hub)
 2) Crawllwing 4353 documents from Naver Encyclopedia with keywords "finance" "economy" "investment"
-3) National Language Institute Newspaper Corpus 2022 (Everyone's corpus)
+3) National Language Institute Newspaper Corpus 2022 ([모두의 말뭉치](https://corpus.korean.go.kr/))
 
 In order to unify the domain characteristics in the dataset and proceed with sophisticated sampling, corpus 1) and 3) underwent a process of extracting only corpus related to 'economy' with BM25.
 
@@ -93,7 +93,7 @@ output
 | polyglot-ko-3.8b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | polyglot-ko-5.8b | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-The problem is that the model repeats the instruction, causing hallucinations. This suggests that the model is not tuned properly.
+With short prompts, it seemed like a way to get people to generate longer posts that contained knowledge they didn't have, which could lead to more hallucinations.
 
 We also used bleu and rouge_L, the evaluation metrics of the default generated model, as metrics. As a result, the model performance converged to 0, which supports the previous finding that the tuning was not correct.
 
@@ -109,4 +109,4 @@ Jaecheol Lee <br>
 
 
 ### Copyright
-This material is copyrighted by AI hub and the corpus of all, and use for non-research purposes is prohibited.
+This material is copyrighted by AI hub and [모두의 말뭉치](https://corpus.korean.go.kr/), and use for non-research purposes is prohibited.
